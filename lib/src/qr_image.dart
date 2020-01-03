@@ -147,9 +147,9 @@ class _QrImageState extends State<QrImage> {
     }
     return LayoutBuilder(builder: (context, constraints) {
       // validation failed, show an error state widget if builder is present.
-      if (!_validationResult.isValid) {
-        return _errorWidget(context, constraints, _validationResult.error);
-      }
+      // if (!_validationResult.isValid) {
+      //   return _errorWidget(context, constraints, _validationResult.error);
+      // }
       // no error, build the regular widget
       final widgetSize = widget.size ?? constraints.biggest.shortestSide;
       if (widget.embeddedImage != null) {
